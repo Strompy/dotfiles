@@ -1,3 +1,4 @@
+# echo "its working!"
 # Load version control information
 autoload -Uz vcs_info
 precmd() { vcs_info }
@@ -28,3 +29,14 @@ setopt PROMPT_SUBST
 PROMPT='%F{cyan}%2~ $(git_branch_color)${vcs_info_msg_0_}%f$ '
 
 eval "$(rbenv init -)"
+
+# added by travis gem
+[ ! -s /Users/phillipstrom/.travis/travis.sh ] || source /Users/phillipstrom/.travis/travis.sh
+
+# aliases
+alias ga="git add"
+alias gs="git status"
+alias ber="bundle exec rspec"
+alias gcb="git checkout -b"
+alias gcm="git commit -m"
+alias gpo="git push origin"
