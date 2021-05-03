@@ -5,6 +5,10 @@ Cleanup unused stuff:
 Cleanup cached versions of installed packages:
 `$ rm -rf "$(brew --cache)"`
 
+### Ruby Gems:
+Remove old versions:
+`$ gem cleanup`
+
 ### NPM:
 Clear npm cache:
 `$ npm cache clean --force`
